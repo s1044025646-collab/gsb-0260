@@ -1,0 +1,20 @@
+{
+  "name": "rmb-caps-backend",
+  "version": "1.0.0",
+  "description": "人民币中文大写金额转换与规范写法核验后端（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --no-warnings --test \"dist/test/*.test.js\"",
+    "start": "node --no-warnings dist/server.js",
+    "demo": "node --no-warnings dist/cli.js demo",
+    "cli": "node --no-warnings dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}
