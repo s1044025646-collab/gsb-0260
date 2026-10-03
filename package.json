@@ -1,0 +1,25 @@
+{
+  "name": "rmb-upper-case",
+  "version": "1.0.0",
+  "description": "人民币中文大写金额转换与规范写法核验后端（API + CLI）",
+  "type": "module",
+  "main": "dist/api/server.js",
+  "bin": {
+    "rmb": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "start": "node dist/api/server.js",
+    "dev": "node --experimental-strip-types src/api/server.ts",
+    "demo": "node dist/cli/index.js demo"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
